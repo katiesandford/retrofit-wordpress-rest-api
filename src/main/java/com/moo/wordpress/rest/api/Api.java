@@ -13,6 +13,8 @@ import java.util.Map;
  */
 public interface Api {
 
+    public final static String DATE_FORMAT = "yyyy-MM-dd'T'HH:mm";
+
     @GET("posts")
     Call<List<Post>> getPosts(@QueryMap Map<String, String> filter);
 }

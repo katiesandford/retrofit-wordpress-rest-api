@@ -1,6 +1,9 @@
 package com.moo.wordpress.rest.api.model;
 
 import com.google.gson.annotations.SerializedName;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+
+import java.util.Date;
 
 /**
  * Post DTO
@@ -12,19 +15,19 @@ import com.google.gson.annotations.SerializedName;
 public class Post {
 
     @SerializedName("ID")
-    private long id;
+    private Integer id;
 
     private String title;
 
-    private String date;
+    private Date date;
 
     @SerializedName("date_gmt")
-    private String dateGMT;
+    private Date dateGMT;
 
-    private String modified;
+    private Date modified;
 
     @SerializedName("modified_gmt")
-    private String modifiedGMT;
+    private Date modifiedGMT;
 
     @SerializedName("date_tz")
     private String dateTZ;
@@ -40,19 +43,9 @@ public class Post {
 
     private User author;
 
-    private String password; //TODO: is this a field? In docs but not example
-
     private String content;
 
     private String excerpt;
-
-    @SerializedName("content_raw")
-    private String contentRaw; //TODO: is this a field? In docs but not example
-
-    @SerializedName("excerpt_raw")
-    private String excerptRaw; //TODO: is this a field? In docs but not example
-
-    private long parent;
 
     private String link;
 
@@ -70,21 +63,19 @@ public class Post {
     private boolean sticky;
 
     @SerializedName("featured_image")
-    private Media featuredImage; //TODO: is this a field? In example but not docs
+    private Media featuredImage;
 
-    private String format;// TODO: is this a field? In example it is format, but in docs it is post_format
+    private String format;
 
-    //private String terms; // TODO: what format is this?
+    private String slug;
 
-    private EntityMeta meta; // TODO: what format is this?
+    private EntityMeta meta;
 
-    //private Entit post_meta; // TODO: what format is this?
-
-    public long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -96,35 +87,35 @@ public class Post {
         this.title = title;
     }
 
-    public String getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
-    public String getDateGMT() {
+    public Date getDateGMT() {
         return dateGMT;
     }
 
-    public void setDateGMT(String dateGMT) {
+    public void setDateGMT(Date dateGMT) {
         this.dateGMT = dateGMT;
     }
 
-    public String getModified() {
+    public Date getModified() {
         return modified;
     }
 
-    public void setModified(String modified) {
+    public void setModified(Date modified) {
         this.modified = modified;
     }
 
-    public String getModifiedGMT() {
+    public Date getModifiedGMT() {
         return modifiedGMT;
     }
 
-    public void setModifiedGMT(String modifiedGMT) {
+    public void setModifiedGMT(Date modifiedGMT) {
         this.modifiedGMT = modifiedGMT;
     }
 
@@ -176,14 +167,6 @@ public class Post {
         this.author = author;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
     public String getContent() {
         return content;
     }
@@ -200,28 +183,12 @@ public class Post {
         this.excerpt = excerpt;
     }
 
-    public String getContentRaw() {
-        return contentRaw;
+    public void getParent() {
+        throw new UnsupportedOperationException("API property is not yet implemented");
     }
 
-    public void setContentRaw(String contentRaw) {
-        this.contentRaw = contentRaw;
-    }
-
-    public String getExcerptRaw() {
-        return excerptRaw;
-    }
-
-    public void setExcerptRaw(String excerptRaw) {
-        this.excerptRaw = excerptRaw;
-    }
-
-    public long getParent() {
-        return parent;
-    }
-
-    public void setParent(long parent) {
-        this.parent = parent;
+    public void setParent(Integer parent) {
+        throw new UnsupportedOperationException("API property is not yet implemented");
     }
 
     public String getLink() {
@@ -288,13 +255,13 @@ public class Post {
         this.format = format;
     }
 
-//    public String getTerms() {
-//        return terms;
-//    }
-//
-//    public void setTerms(String terms) {
-//        this.terms = terms;
-//    }
+    public void getTerms() {
+        throw new UnsupportedOperationException("API property is not yet implemented");
+    }
+
+    public void setTerms(String terms) {
+        throw new UnsupportedOperationException("API property is not yet implemented");
+    }
 
     public EntityMeta getMeta() {
         return meta;
@@ -304,11 +271,11 @@ public class Post {
         this.meta = meta;
     }
 
-//    public String getPost_meta() {
-//        return post_meta;
-//    }
-//
-//    public void setPost_meta(String post_meta) {
-//        this.post_meta = post_meta;
-//    }
+    public String getSlug() {
+        return slug;
+    }
+
+    public void setSlug(String slug) {
+        this.slug = slug;
+    }
 }
