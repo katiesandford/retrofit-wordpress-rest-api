@@ -1,0 +1,40 @@
+{
+  "width": 1369,
+  "height": 456,
+  "file": "2015\/08\/Screen-Shot-2016-01-14-at-11.11.11.png",
+  "sizes": {
+    "thumbnail": {
+      "file": "Screen-Shot-2016-01-14-at-11.11.11-200x200.png",
+      "width": 200,
+      "height": 200,
+      "mime-type": "image\/png",
+      "url": "https:\/\/www.katie.office.moo.com\/blog\/wp-content\/uploads\/2015\/08\/Screen-Shot-2016-01-14-at-11.11.11-200x200.png"
+    },
+    "medium": {
+      "file": "Screen-Shot-2016-01-14-at-11.11.11-640x213.png",
+      "width": 640,
+      "height": 213,
+      "mime-type": "image\/png",
+      "url": "https:\/\/www.katie.office.moo.com\/blog\/wp-content\/uploads\/2015\/08\/Screen-Shot-2016-01-14-at-11.11.11-640x213.png"
+    },
+    "large": {
+      "file": "Screen-Shot-2016-01-14-at-11.11.11-1024x341.png",
+      "width": 1024,
+      "height": 341,
+      "mime-type": "image\/png",
+      "url": "https:\/\/www.katie.office.moo.com\/blog\/wp-content\/uploads\/2015\/08\/Screen-Shot-2016-01-14-at-11.11.11-1024x341.png"
+    }
+  },
+  "image_meta": {
+    "aperture": 0,
+    "credit": "",
+    "camera": "",
+    "caption": "",
+    "created_timestamp": 0,
+    "copyright": "",
+    "focal_length": 0,
+    "iso": 0,
+    "shutter_speed": 0,
+    "title": ""
+  }
+}

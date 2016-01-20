@@ -79,6 +79,7 @@ public class MediaTest {
         // Serialization of nested properties will be tested individually
         assertNotNull(media.getMeta());
         assertNotNull(media.getAuthor());
+        assertNotNull(media.getAttachmentMeta());
 
         // Media specific properties (in addition to the post ones)
         assertThat(media.getSource(), is(mediaDataObject.get("source").getAsString()));
@@ -95,12 +96,6 @@ public class MediaTest {
     public void testGetParentThrowsUnsupportedOperationException()
     {
         media.getParent();
-    }
-
-    @Test(expected = UnsupportedOperationException.class)
-    public void testGetAttachmentMetaThrowsUnsupportedOperationException()
-    {
-        media.getAttachmentMeta();
     }
 
 }

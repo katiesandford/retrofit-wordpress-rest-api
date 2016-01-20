@@ -71,6 +71,9 @@ public class Media {
 
     private String source;
 
+    @SerializedName("attachment_meta")
+    private MediaMeta attachmentMeta;
+
     @SerializedName("is_image")
     private boolean isImage;
 
@@ -291,11 +294,11 @@ public class Media {
         this.source = source;
     }
 
-    public void getAttachmentMeta() {
-        throw new UnsupportedOperationException("API property is not yet implemented");
+    public MediaMeta getAttachmentMeta() {
+        return attachmentMeta;
     }
 
-    public void setAttachmentMeta(String meta) {
-        throw new UnsupportedOperationException("API property is not yet implemented");
+    public void setAttachmentMeta(MediaMeta attachmentMeta) {
+        this.attachmentMeta = attachmentMeta;
     }
 }
