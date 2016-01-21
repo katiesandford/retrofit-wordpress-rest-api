@@ -1,5 +1,6 @@
 package com.moo.wordpress.rest.api.model;
 
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.annotations.SerializedName;
 
@@ -18,10 +19,10 @@ public class MediaMeta {
 
     private String file;
 
-    private JsonObject sizes;
+    private DefaultFeaturedImageSizes sizes;
 
     @SerializedName("image_meta")
-    private JsonObject imageMeta;
+    private JsonElement imageMeta;
 
     public Integer getWidth() {
         return width;
@@ -47,19 +48,19 @@ public class MediaMeta {
         this.file = file;
     }
 
-    public JsonObject getSizes() {
+    public DefaultFeaturedImageSizes getSizes() {
         return sizes;
     }
 
-    public void setSizes(JsonObject sizes) {
+    public void setSizes(DefaultFeaturedImageSizes sizes) {
         this.sizes = sizes;
     }
 
-    public JsonObject getImageMeta() {
+    public JsonElement getImageMeta() {
         return imageMeta;
     }
 
-    public void setImageMeta(JsonObject imageMeta) {
+    public void setImageMeta(JsonElement imageMeta) {
         this.imageMeta = imageMeta;
     }
 }

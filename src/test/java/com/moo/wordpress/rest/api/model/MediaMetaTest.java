@@ -12,8 +12,10 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.net.URL;
 import java.text.ParseException;
+import java.util.Optional;
 
 import static org.hamcrest.core.Is.is;
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertThat;
 
 public class MediaMetaTest {
@@ -40,8 +42,9 @@ public class MediaMetaTest {
         assertThat(mediaMeta.getWidth(), is(mediaMetaDataObject.get("width").getAsInt()));
         assertThat(mediaMeta.getHeight(), is(mediaMetaDataObject.get("height").getAsInt()));
         assertThat(mediaMeta.getFile(), is(mediaMetaDataObject.get("file").getAsString()));
-        assertThat(mediaMeta.getSizes(), is(mediaMetaDataObject.get("sizes")));
         assertThat(mediaMeta.getImageMeta(), is(mediaMetaDataObject.get("image_meta")));
+
+        assertNotNull(mediaMeta.getSizes());
     }
 
 
