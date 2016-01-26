@@ -1,0 +1,9 @@
+{
+  "links": {
+    "self": "https:\/\/www.katie.office.moo.com\/blog\/wp-json\/posts\/3210",
+    "author": "https:\/\/www.katie.office.moo.com\/blog\/wp-json\/users\/1",
+    "collection": "https:\/\/www.katie.office.moo.com\/blog\/wp-json\/posts",
+    "replies": "https:\/\/www.katie.office.moo.com\/blog\/wp-json\/posts\/3210\/comments",
+    "version-history": "https:\/\/www.katie.office.moo.com\/blog\/wp-json\/posts\/3210\/revisions"
+  }
+}

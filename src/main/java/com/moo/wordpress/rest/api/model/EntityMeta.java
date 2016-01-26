@@ -1,6 +1,6 @@
 package com.moo.wordpress.rest.api.model;
 
-import com.google.gson.JsonObject;
+import com.google.gson.JsonElement;
 
 /**
  * EntityMeta DTO
@@ -11,5 +11,13 @@ import com.google.gson.JsonObject;
  */
 public class EntityMeta {
 
-    private JsonObject links;
+    private JsonElement links;
+
+    public JsonElement getLinks() {
+        return links;
+    }
+
+    public void setLinks(JsonElement links) {
+        this.links = links;
+    }
 }
