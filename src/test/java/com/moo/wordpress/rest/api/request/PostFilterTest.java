@@ -13,8 +13,8 @@ public class PostFilterTest {
     @Test
     public void testToMapReturnsValidMap() {
         PostFilter filter = new PostFilter();
-        filter.setParam(PostFilter.WPFilterKeys.p, "A");
-        filter.setParam(PostFilter.WPFilterKeys.day, "B");
+        filter.setParam(PostFilter.WPFilterKeys.P, "A");
+        filter.setParam(PostFilter.WPFilterKeys.DAY, "B");
         HashMap<String, String> expectedMap = new HashMap<String, String>();
         expectedMap.put("filter[p]", "A");
         expectedMap.put("filter[day]", "B");
@@ -31,7 +31,5 @@ public class PostFilterTest {
         PostFilter filter = new PostFilter();
         assertThat(filter.toMap().size(), is(0));
     }
-
-
 
 }
